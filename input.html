@@ -7,37 +7,51 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="https://www.google.com/search?" method="get">
-        <div>
-            <label>
-                label1
-                <input type="text" value="delfi" name="q"/>
-            </label>            
-        </div>
-          
-        <div>
-            <Label for="id">
-                Tel. numeris:<sup>1</sup>
-                <input type="text" name="input2" placeholder="+37060000000" id="id"/>
-            </Label>
-        </div>
-        <div>
-            <button>Pateikti formą</button>
-        </div>
-    </form>
+    <fieldset>
+        <legend>Forma</legend>
+        <form action="https://www.google.com/search?" method="get" id="formID">
+            <div>
+                <label>
+                    label1
+                    <input type="text" value="delfi" name="q"/>
+                </label>            
+            </div>
+              
+            <div>
+                <Label for="id">
+                    Tel. numeris:<sup>1</sup>
+                    <input type="password" name="input2" placeholder="+37060000000" id="id"/>
+                </Label>
+            </div>
+            <div>
+                <button>Pateikti formą</button>
+            </div>
+        </form>
+    </fieldset>
+   
     
-    
+    <fieldset>
+        <legend>Išneštas mygtukas ir išnaša</legend>
+        <div>
+            <input
+            type="submit"
+            value="Mygtukas2 su ID"
+            form="formID"
+            formaction="./link.html"
+            formmethod="get"
+            />
+        </div>
+        <div><label for="id"><sup>1</sup>išnaša</label</div>
+    </fieldset>
     <hr>
-    <label for="id"><sup>1</sup>išnaša</label>
-    <hr>
-
     
-    
-    
-    
-    
-
-
+    <fieldset>
+        <legend>textarea</legend>
+        <label>
+            textarea
+            <textarea name="" id="" cols="30" rows="10">Laukas</textarea>
+        </label>
+    </fieldset>
 
 
 </body>
